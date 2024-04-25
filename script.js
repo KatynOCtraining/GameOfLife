@@ -55,7 +55,7 @@ function startGame() {
 
   // Démarre le jeu en lançant une boucle d'animation
   running = true;
-  const speed = 200; // Vitesse de mise à jour en millisecondes
+  const speed = 400; // Vitesse de mise à jour en millisecondes
 
   function updateGrid() {
     if (!running) return;
