@@ -5,8 +5,8 @@ html {
   height: 100%;
   display: flex; /* Utilise flexbox pour centrer les éléments */
   flex-direction: column;
-  justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
+  font-family: "Jersey 25", sans-serif;
 }
 
 #grid-container {
@@ -26,4 +26,11 @@ html {
 
 button {
   margin: 10px;
+}
+
+h1 {
+  padding-bottom: 30px;
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
