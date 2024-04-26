@@ -15,15 +15,26 @@
   <body>
     <h1>Le Jeu de la vie de Conway par K8</h1>
     <div id="grid-container"></div>
-    <div id="generationCounter">Generation: 0</div>
 
-    <section class="buttoncontrol">
-      <button id="startBtn">Start</button>
-      <button id="stopBtn">Stop</button>
-      <button id="clearBtn">Clear</button>
-    </section>
+    <div class="control">
+      <div id="generationCounter">Generation: 0</div>
+
+      <section class="buttoncontrol">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="clearBtn">Clear</button>
+        <button id="speedUpBtn">Accélérer</button>
+        <button id="speedDownBtn">Ralentir</button>
+      </section>
+      <section>
+        <h4>N'hésites pas à tester ces structures !</h4>
+        <button id="gliderBtn">Glider</button>
+        <button id="gliderGunBtn">Glider Gun</button>
+        <button id="spaceshipBtn">Spaceship</button>
+        <button id="copperheadBtn">Copperhead</button>
+      </section>
+    </div>
 
     <script src="script.js"></script>
-    <script src="./script.js"></script>
   </body>
 </html>
