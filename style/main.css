@@ -66,7 +66,7 @@ button:hover {
 .close {
   position: absolute; /* Position absolue par rapport à la modale */
   top: 10px; /* Distance du haut de la modale */
-  right: 10px; /* Distance de la droite de la modale */
+  right: 20px; /* Distance de la droite de la modale */
   color: #aaa;
   font-size: 28px;
   font-weight: bold;
