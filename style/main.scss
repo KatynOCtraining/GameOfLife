@@ -1,3 +1,7 @@
+@import "./grid";
+@import "./button";
+@import "./modale";
+
 body,
 html {
   margin: 0;
@@ -9,33 +13,6 @@ html {
   font-family: "Courier New", Courier, monospace;
 }
 
-#grid-container {
-  display: grid;
-  grid-template-columns: repeat(100, 10px);
-  grid-template-rows: repeat(60, 10px);
-  justify-content: center; /* Centre horizontalement les cellules de la grille */
-  align-items: center; /* Centre verticalement les cellules de la grille */
-  border: 1px solid #ccc; /* Ajoute une bordure pour mieux visualiser la grille */
-}
-
-.cell {
-  width: 10px;
-  height: 10px;
-  border: 1px solid #ccc;
-}
-
-button {
-  margin: 10px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    background-color: lightblue;
-  }
-}
-
 h1 {
   padding-bottom: 30px;
   font-family: "Jersey 10 Charted", sans-serif;
@@ -43,9 +20,6 @@ h1 {
   font-style: normal;
 }
 
-.control {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.fa-twitter {
+  color: blue;
 }

@@ -1,0 +1,20 @@
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(100, 10px);
+  grid-template-rows: repeat(60, 10px);
+  justify-content: center; /* Centre horizontalement les cellules de la grille */
+  align-items: center; /* Centre verticalement les cellules de la grille */
+  border: 1px solid #ccc; /* Ajoute une bordure pour mieux visualiser la grille */
+}
+
+.cell {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+}
+.control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}

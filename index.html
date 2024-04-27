@@ -11,9 +11,148 @@
       href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Jersey+25&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/bb33b41c96.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Le Jeu de la vie de Conway par K8</h1>
+    <div id="imgTrigger">
+      <p>En savoir plus</p>
+      <i class="fa-solid fa-circle-info"></i>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Le principe du jeu de la vie</h2>
+        <p>
+          Le Jeu de la Vie de Conway est un automate cellulaire où des cellules
+          sur une grille bidimensionnelle évoluent à chaque tour selon des
+          règles précises basées sur l'état de leurs voisines. Une cellule peut
+          être "vivante" (ici, noire) ou "morte" (blanche), changeant d'état en
+          fonction du nombre de voisins vivants. Ce jeu sans joueur illustre la
+          complexité émergente et l'auto-organisation à partir de règles
+          simples. Tellement simple qu'en vérité, il n'existe que deux règles
+          pour régir entièrement la simulation.
+        </p>
+        <div class="info_rules">
+          <div class="explicit">
+            <div class="info_rules_explicit">
+              <p><i class="fa-solid fa-1"></i></p>
+              <p>
+                Une cellule morte avec exactement 3 voisines vivantes prend vie
+              </p>
+            </div>
+            <div class="info_rules_explicit">
+              <p><i class="fa-solid fa-2"></i></p>
+              <p>
+                Une cellule reste vivant si elle a entre deux et trois voisine
+                vivante
+              </p>
+            </div>
+          </div>
+          <div class="implicit">
+            <p><i class="fa-solid fa-sort-down"></i></p>
+            <p>
+              De façon implicite, si une cellule à moins de deux ou plus de
+              trois cellules voisines vivantes, celle-ci meurt.
+            </p>
+          </div>
+        </div>
+        <h3>Pour aller plus loin :</h3>
+        <div class="allerplusloin">
+          <div class="video">
+            <p>
+              <iframe
+                width="280"
+                height="157"
+                src="https://www.youtube.com/embed/S-W0NX97DB0?si=-Cb3yQZztIzT5z1v"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </p>
+            <p>
+              <iframe
+                width="280"
+                height="157"
+                src="https://www.youtube.com/embed/eMn43As24Bo?si=kb-wbl0opDnLkrn5"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </p>
+            <p>
+              <iframe
+                width="280"
+                height="157"
+                src="https://www.youtube.com/embed/PlzV4aJ7iMI?si=HGr4Zm_qFTu7489d"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </div>
+          <div class="wikigameoflife">
+            <a href="https://www.wikiwand.com/fr/Jeu_de_la_vie"
+              >Le wiki du jeu de la vie</a
+            >
+            <h4>Quelques structures hors du commun :</h4>
+            <a
+              href="https://www.wikiwand.com/fr/Structure_stable_(automate_cellulaire)"
+              target="_blank"
+              >Les structures stables</a
+            >
+            <a
+              href="https://www.wikiwand.com/fr/Oscillateur_(automate_cellulaire)"
+              target="_blank"
+              >Les oscillateurs</a
+            >
+            <a
+              href="https://www.wikiwand.com/fr/Vaisseau_(automate_cellulaire)"
+              target="_blank"
+              >Les vaisseaux</a
+            >
+            <a
+              href="https://www.wikiwand.com/fr/Mathusalem_(automate_cellulaire)"
+              target="_blank"
+              >Les Mathusalems</a
+            >
+            <a href="https://www.wikiwand.com/fr/Puffeur" target="_blank"
+              >Les Puffeurs</a
+            >
+            <a
+              href="https://www.wikiwand.com/fr/Canon_(automate_cellulaire)"
+              target="_blank"
+              >Les Canons</a
+            >
+            <a
+              href="https://www.wikiwand.com/fr/Jardin_d'Éden_(automate_cellulaire)"
+              target="_blank"
+              >Les jardins d'Eden</a
+            >
+            <a
+              href="https://www.wikiwand.com/fr/Constructeur_universel"
+              target="_blank"
+              >Constructeur universel</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1>
+      Le Jeu de la vie de Conway par K8
+      <a href="https://twitter.com/nytak8" target="_blank"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+    </h1>
     <div id="grid-container"></div>
 
     <div class="control">
@@ -34,7 +173,7 @@
         <button id="copperheadBtn">Copperhead</button>
       </section>
     </div>
-
+    <script src="./modale.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

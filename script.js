@@ -1,4 +1,4 @@
-const rows = 60;
+const rows = 70;
 const cols = 100;
 const gridContainer = document.getElementById("grid-container");
 const startBtn = document.getElementById("startBtn");
